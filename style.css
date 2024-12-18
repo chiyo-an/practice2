@@ -1,0 +1,98 @@
+/* 리셋 */
+@import url('https://fonts.cdnfonts.com/css/calculator');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, 
+body {
+    width: 100%;
+    height: 100%; 
+}
+
+/* 계산기 스타일링 */
+body {
+    width: 100%;
+    background-color: #737b79;
+}
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex; 
+    justify-content: center;
+    align-items: center 
+}
+.calculator-container {
+    width: 100%; 
+    max-width: 380px;
+    border: 5px solid #b8b8b8;
+    border-radius: 40px;
+    background-color: #1c1c1c;
+    padding: 15px;
+    display: flex;
+    flex-direction: column; 
+    gap: 15px;  
+}
+/* 디스플레이 */   
+.calculator-display {
+    width: 100%;
+    height: 130px;
+    border-radius: 25px;
+    background-color: #2f2f2f;
+}
+.calculator-display__result {
+    font-family: 'Calculator', sans-serif;
+    height: 130px;
+    line-height: 130px;
+    text-align: right;
+    font-weight: bold;
+    font-size: 70px;
+    padding: 0 20px;
+    color: #e9ff6e;
+    letter-spacing: 3px;
+}
+/* 버튼 */
+.calculator-buttons {
+    width: 100%;
+    height: 440px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.button {
+    width: 25%;
+    max-width: 80px;
+    height: 80px;
+    font-size: 25px;
+    line-height: 30px;
+    border-radius: 50px;
+    color: #3b3b3b;
+    border: none;
+    background-color: #343333;
+    color: white;
+}
+.button:hover {
+    cursor: pointer;
+    filter: saturate(50%);
+    /* color: #333; */
+}
+
+.button:active {
+    filter: saturate(300%);
+    /* color: #333; */
+}
+.zero {
+    width: 50%;
+    max-width: 165px;
+}
+.operator,
+.function {
+    background-color: #626f71;
+    color: white;
+}
+.equals {
+    background-color: #e9ff6e;
+    color: #000;
+}
